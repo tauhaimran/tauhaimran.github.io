@@ -2,56 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tauha Imran | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Your Name</h1>
-      <p class="tagline">CS Student | AI/ML | Embedded | VR | DevOps</p>
-      <p class="links">
-        <a href="mailto:your@email.com">📧 Email</a> |
-        <a href="https://github.com/yourusername">🐱 GitHub</a> |
-        <a href="https://linkedin.com/in/yourprofile">🔗 LinkedIn</a>
-      </p>
+  <header class="compact-header">
+    <img src="pfp.png" alt="Tauha Imran" class="profile-pic" />
+    <div class="intro-text">
+        <h1>Tauha Imran</h1>
+        <strong><p class="tagline">CS Student @ FAST | AI/ML | Embedded | DevOps | VR | Biomed</p></strong>
+        <p class="specialization">
+        This is my portfolio site — a space where I share the projects, ideas, and technologies I'm passionate about, like <strong>VR & Biomedical Applications with AI integrations</strong>
+        </p>
+      <div class="all-links">
+        <p><strong>Links:</strong> 
+          <a href="mailto:tauhaimran@gmail.com">Email</a> | 
+          <a href="https://github.com/tauhaimran" target="_blank">GitHub</a> | 
+          <a href="https://www.linkedin.com/in/tauha-imran-6185b3280/" target="_blank">LinkedIn</a>
+          <a href="https://www.behance.net/naqshperceptions" target="_blank">Behance</a> | 
+          <a href="https://www.deviantart.com/naqshperceptions" target="_blank">DeviantArt</a>
+        </p>
+      </div>
     </div>
   </header>
 
-  <!-- Featured Projects Carousel -->
-  <section class="carousel container">
-    <h2>🚀 Featured Projects</h2>
-    <div class="carousel-track">
-      <!-- Manually add featured repos -->
-      <div class="carousel-card">
-        <h3>VR Medical Trainer</h3>
-        <p>Unity VR project for surgical training</p>
-        <a href="https://github.com/yourusername/vr-medical-trainer" target="_blank">View on GitHub</a>
-      </div>
-      <div class="carousel-card">
-        <h3>Secure Reverse Proxy</h3>
-        <p>DevOps project using NGINX, Docker</p>
-        <a href="https://github.com/yourusername/secure-reverse-proxy" target="_blank">View on GitHub</a>
-      </div>
-      <div class="carousel-card">
-        <h3>Embedded Sensor Dashboard</h3>
-        <p>Reads sensor data from microcontrollers</p>
-        <a href="https://github.com/yourusername/embedded-sensor-dashboard" target="_blank">View on GitHub</a>
-      </div>
+  <main class="container">
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search projects..." />
+      <select id="categoryFilter">
+        <option value="All">All Categories</option>
+        <option value="AI/ML">AI/ML</option>
+        <option value="DevOps">DevOps</option>
+        <option value="VR / Game">VR / Game</option>
+        <option value="Embedded">Embedded</option>
+        <option value="Others">Others</option>
+      </select>
     </div>
-  </section>
-
-  <!-- All Projects -->
-  <section class="container">
-    <h2>📂 All Projects</h2>
-    <input type="text" id="searchInput" placeholder="Search projects...">
-    <div id="projects-container" class="projects-grid">Loading...</div>
-  </section>
+    <div id="projects-container"></div>
+  </main>
 
   <footer>
-    <p>© 2025 Your Name. Built with ❤️</p>
+    <p>&copy; 2025 Tauha Imran. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>

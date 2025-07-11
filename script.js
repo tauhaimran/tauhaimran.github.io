@@ -1,40 +1,66 @@
-const username = "tauhaimran"; // Replace this with your GitHub username
 const container = document.getElementById("projects-container");
+const searchInput = document.getElementById("searchInput");
+const categoryFilter = document.getElementById("categoryFilter");
+
 let allRepos = [];
 
 async function loadRepos() {
   try {
-    const res = await fetch(`https://api.github.com/users/${username}/repos?per_page=100`);
-    const repos = await res.json();
+    const res = await fetch("repos.csv");
+    const text = await res.text();
+    const rows = text.trim().split("\n").slice(1); // skip headers
 
-    allRepos = repos;
-    renderProjects(repos);
-  } catch (e) {
-    container.innerHTML = "<p>🚫 Could not load repos.</p>";
+    allRepos = rows.map(row => {
+      const [name, desc, link, languages, category] = row.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/).map(s => s.replace(/^"|"$/g, ''));
+      return {
+        name,
+        description: desc,
+        url: link,
+        languages: languages.toLowerCase(),
+        keywords: category.toLowerCase()
+      };
+    });
+
+    filterAndRender();
+  } catch (err) {
+    container.innerHTML = `<p style="color:#dc2626;">🚫 Failed to load repos.csv</p>`;
   }
+}
+
+function filterAndRender() {
+  const query = searchInput.value.toLowerCase();
+  const selectedCategory = categoryFilter.value;
+
+  const filtered = allRepos.filter(repo => {
+    const combined = `${repo.name} ${repo.description} ${repo.languages} ${repo.keywords}`;
+    const matchesSearch = combined.includes(query);
+    const matchesCategory = selectedCategory === "All" || repo.keywords.includes(selectedCategory.toLowerCase());
+    return matchesSearch && matchesCategory;
+  });
+
+  renderProjects(filtered);
 }
 
 function renderProjects(repos) {
   container.innerHTML = "";
+  const grid = document.createElement("div");
+  grid.className = "projects-grid";
+
   repos.forEach(repo => {
     const card = document.createElement("div");
     card.className = "project-card";
     card.innerHTML = `
-      <h3>${repo.name}</h3>
-      <p>${repo.description || "No description provided."}</p>
-      <a href="${repo.html_url}" target="_blank">🔗 View on GitHub</a>
+      <h4>${repo.name}</h4>
+      <p>${repo.description}</p>
+      <a href="${repo.url}" target="_blank">🔗 View</a>
     `;
-    container.appendChild(card);
+    grid.appendChild(card);
   });
+
+  container.appendChild(grid);
 }
 
-document.getElementById("searchInput").addEventListener("input", (e) => {
-  const query = e.target.value.toLowerCase();
-  const filtered = allRepos.filter(repo =>
-    repo.name.toLowerCase().includes(query) ||
-    (repo.description && repo.description.toLowerCase().includes(query))
-  );
-  renderProjects(filtered);
-});
+searchInput.addEventListener("input", filterAndRender);
+categoryFilter.addEventListener("change", filterAndRender);
 
 loadRepos();

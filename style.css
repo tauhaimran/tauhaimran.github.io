@@ -1,8 +1,26 @@
 body {
-  font-family: 'Inter', sans-serif;
   margin: 0;
-  background: #f9fafb;
-  color: #111;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: #1e293b;
+  color: white;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+}
+
+.links a {
+  margin: 0 1rem;
+  color: #93c5fd;
+  text-decoration: none;
 }
 
 .container {
@@ -11,90 +29,161 @@ body {
   padding: 2rem;
 }
 
-header {
-  background-color: #1f2937;
-  color: white;
-  padding: 3rem 0;
-  text-align: center;
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-.tagline {
-  margin-top: 0.5rem;
-  font-size: 1.1rem;
-  color: #cbd5e0;
-}
-
-.links a {
-  color: #93c5fd;
-  margin: 0 0.5rem;
-  text-decoration: none;
-}
-
-.links a:hover {
-  text-decoration: underline;
-}
-
-input#searchInput {
-  width: 100%;
+#searchInput,
+#categoryFilter {
   padding: 0.75rem;
   font-size: 1rem;
-  margin-bottom: 2rem;
-  border: 1px solid #ccc;
+  border: 1px solid #d1d5db;
   border-radius: 8px;
+  flex: 1;
+  min-width: 200px;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
 }
 
-.project-card, .carousel-card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+.project-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(6px);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
 }
 
-.project-card h3,
-.carousel-card h3 {
-  margin-top: 0;
+.project-card h4 {
+  margin: 0 0 0.5rem;
 }
 
-.project-card a,
-.carousel-card a {
-  color: #2563eb;
-  font-weight: bold;
+.project-card p {
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
   text-decoration: none;
-}
-
-.carousel {
-  background: #f1f5f9;
-  border-top: 2px solid #e2e8f0;
-  border-bottom: 2px solid #e2e8f0;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.carousel-track {
-  display: flex;
-  overflow-x: auto;
-  gap: 1rem;
-}
-
-.carousel-card {
-  min-width: 280px;
-  flex: 0 0 auto;
+  color: #2563eb;
 }
 
 footer {
   text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
+  padding: 1rem;
+  background: #f1f5f9;
   color: #6b7280;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #ddd;
+}
+
+.intro {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.intro h2 {
+  margin-top: 0;
+  color: #1f2937;
+}
+
+.intro p {
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.subsection {
+  margin-top: 1.5rem;
+}
+
+.subsection h3 {
+  margin-bottom: 0.3rem;
+  color: #111827;
+}
+
+.subsection ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.subsection li {
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.subsection a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.compact-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  background: #1e293b;
+  color: white;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1rem;
+  border: 3px solid #ddd;
+}
+
+.intro-text {
+  max-width: 600px;
+  margin-left: 1rem;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #cbd5e1;
+}
+
+.specialization {
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+  color: #e2e8f0;
+  line-height: 1.5;
+}
+
+.all-links p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.all-links a {
+  color: #93c5fd;
+  text-decoration: none;
+  margin: 0 0.25rem;
+}
+
+.all-links a:hover {
+  text-decoration: underline;
 }
