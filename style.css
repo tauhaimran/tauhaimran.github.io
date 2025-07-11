@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+header, footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+#projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em;
+  gap: 1em;
+}
+.project-card {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 1em;
+  width: 300px;
+  border-radius: 8px;
+}
+.project-card h3 {
+  margin: 0.5em 0;
+}
