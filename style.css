@@ -94,8 +94,20 @@ header {
 
 .projects-grid {
   column-count: 3;
-  column-gap: 2.5rem;      /* Increase gap between columns */
-  padding: 0 1.5rem;       /* Add horizontal padding */
+  column-gap: 2.5rem;
+  padding: 0 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .projects-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 400px) {
+  .projects-grid {
+    column-count: 1;
+  }
 }
 
 .project-card h4 {
