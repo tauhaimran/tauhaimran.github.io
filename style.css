@@ -46,7 +46,7 @@ header {
   min-width: 200px;
 }
 
-.projects-grid {
+/*.projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
@@ -57,7 +57,25 @@ header {
   backdrop-filter: blur(6px);
   padding: 1rem;
   border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);}
+*/
+
+.projects-grid {
+  column-count: 3;
+  column-gap: 1.5rem;
+  /* Remove grid-template-columns and gap */
+}
+
+.project-card {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(6px);
+  padding: 1rem;
+  border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  vertical-align: top;
 }
 
 .project-card h4 {

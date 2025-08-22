@@ -52,7 +52,7 @@ function filterAndRender() {
   renderProjects(filtered);
 }
 
-function renderProjects(repos) {
+/*function renderProjects(repos) {
   container.innerHTML = "";
   const grid = document.createElement("div");
   grid.className = "projects-grid";
@@ -64,6 +64,27 @@ function renderProjects(repos) {
       <h4>${repo.name}</h4>
       <p>${repo.description}</p>
       <a href="${repo.url}" target="_blank">🔗 View</a>
+    `;
+    grid.appendChild(card);
+  });
+
+  container.appendChild(grid);
+}*/
+
+function renderProjects(repos) {
+  container.innerHTML = "";
+  const grid = document.createElement("div");
+  grid.className = "projects-grid";
+
+  repos.forEach(repo => {
+    const card = document.createElement("div");
+    card.className = "project-card";
+    card.innerHTML = `
+      <h4>${repo.name}</h4>
+      <p>${repo.description}</p>
+      <a href="${repo.url}" target="_blank">
+        <span style="font-weight:bold;">🔗 GitHub Repo</span>
+      </a>
     `;
     grid.appendChild(card);
   });
