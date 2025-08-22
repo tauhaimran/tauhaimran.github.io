@@ -1,5 +1,5 @@
 name,desc,link,languages,category
-Technical Portfolio Site,"Personal portfolio website to showcase projects and professional journey, deployed via GitHub Pages",https://github.com/tauhaimran/tauhaimran.github.io,"HTML, CSS, JavaScript","portfolio, web, frontend"
+Technical Portfolio Site,Personal portfolio website to showcase projects and professional journey  deployed via GitHub Pages,https://github.com/tauhaimran/tauhaimran.github.io,"HTML, CSS, JavaScript","portfolio, web, frontend"
 Buildables-AI Fellowship,Project repo related to Buildables AI Fellowship (Jupyter Notebook experiments),https://github.com/tauhaimran/Buildables-AI-fellowship,Jupyter Notebook,"ai, fellowship, research"
 Pyxel Retro Game Development,Retro-style game development experiments using Pyxel in Python,https://github.com/tauhaimran/pyxel--retro-game-developement-,Python,"game, pyxel, retro, python"
 CS4067 EventBooking,Event booking system with .NET backend and SQL database,https://github.com/DevOps-I221339-I221239/CS4067-Assgt-EventBooking-i221239-i221339-tauhaimran-hamzaahmed,"C#, SQL","devops,sql,backend"
@@ -19,5 +19,5 @@ AI classifier for Diabetic Retinopathy,AI classification model for detecting dia
 Pacman game in X86Assembly,Pacman game implemented in x86 Assembly for Linux,https://github.com/tauhaimran/Pacman_X86Assembly,Assembly,"asm,game,embedded, Game"
 pptx designs,Templates and designs for PowerPoint presentations,https://github.com/tauhaimran/pptx_designs,PowerPoint,"design,slides"
 X86Assembly labtasks compilation,Various lab tasks and exercises in x86 Assembly,https://github.com/tauhaimran/X86_Assembly_labtasks,Assembly,"asm,embedded"
-Inter Planetary File System,IPFS file sharing prototype in Go,https://github.com/tauhaimran/Inter-Planetary-File-System,Go,"distributed,devops,server"
-PACMAN multithreaded-UNIX based game,Multi-threaded Pacman clone for UNIX in C,https://github.com/tauhaimran/PACMAN-multithreaded---UNIX---OSproject,"C,pthreads","game,embedded,concurrency,Game"
+Inter Planetary File System,IPFS file sharing prototype for my Data Structures project.,https://github.com/tauhaimran/Inter-Planetary-File-System,C++,"distributed,devops,server"
+PACMAN multithreaded-UNIX based game,Multi-threaded Pacman clone for UNIX in C,https://github.com/tauhaimran/PACMAN-multithreaded---UNIX---OSproject,"C,C++pthreads","game,embedded,concurrency,Game"

@@ -34,8 +34,17 @@ function filterAndRender() {
   const queryWords = query.split(/\s+/).filter(Boolean);
 
   const filtered = allRepos.filter(repo => {
-    const combined = `${repo.name} ${repo.description} ${repo.languages} ${repo.keywords}`.toLowerCase();
-    const matchesSearch = queryWords.every(word => combined.includes(word));
+    // Combine all searchable fields into one array
+    const searchable = [
+      repo.name,
+      repo.description,
+      repo.languages,
+      repo.keywords
+    ].join(" ").toLowerCase();
+
+    // Match if ANY query word is found in the searchable string
+    const matchesSearch = queryWords.length === 0 || queryWords.some(word => searchable.includes(word));
+    // Category filter as before
     const matchesCategory = selectedCategory === "All" || repo.keywords.includes(selectedCategory.toLowerCase());
     return matchesSearch && matchesCategory;
   });
