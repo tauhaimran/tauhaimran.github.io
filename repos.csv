@@ -1,7 +1,7 @@
 name,desc,link,languages,category
 CS4067 EventBooking,Event booking system with .NET backend and SQL database,https://github.com/DevOps-I221339-I221239/CS4067-Assgt-EventBooking-i221239-i221339-tauhaimran-hamzaahmed,"C#, SQL","devops,sql,backend"
 AI algorithms compilation,Collection of common AI algorithms in Python with documentation,https://github.com/tauhaimran/AI-algorithms,Python,"ai,ml,algorithm,python,AI/ML,Game,Data Science"
-Paralle Social Behavior,Parallel algorithm to identify influential users in social networks using Python and network analysis,https://github.com/tauhaimran/Parallel-social-behavior-based-algorithm-for-identification-of-influential-users-in-social-network,Python,"ai,ml,parallel,network,AI/ML"
+Parallel Social Behavior Based Algorithm for Identification of Influential Users in a Social Network,Parallel algorithm to identify influential users in social networks using Python and network analysis,https://github.com/tauhaimran/Parallel-social-behavior-based-algorithm-for-identification-of-influential-users-in-social-network,Python,"ai,ml,parallel,network,AI/ML"
 JSON to CSV converter with FlexYacc,Convert JSON to relational CSV using Flex and Yacc in C,https://github.com/tauhaimran/JSON-to-Relational-CSV-with-Flex---Yacc,C,"compiler,parser,flex,yacc"
 Sentimental-Model deployement with DevOps,Deploying a sentiment analysis model using DevOps practices (Docker,https://github.com/tauhaimran/DevOps_SentimentalModel_Deploy,"Python, Docker","devops,ci,cd,docker,ai,AI/ML"
 Secure GenAI app with Reverse Proxy Server & SSL,Secure reverse proxy setup using Docker and OpenAI-based GenAI,https://github.com/tauhaimran/GenAI-secure-reverse-proxy,"Docker, Python","devops,proxy,nginx,docker AI/ML ,ai,ml,APIs, workflows,ssl"
