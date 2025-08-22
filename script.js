@@ -28,12 +28,14 @@ async function loadRepos() {
 }
 
 function filterAndRender() {
-  const query = searchInput.value.toLowerCase();
+  const query = searchInput.value.trim().toLowerCase();
   const selectedCategory = categoryFilter.value;
 
+  const queryWords = query.split(/\s+/).filter(Boolean);
+
   const filtered = allRepos.filter(repo => {
-    const combined = `${repo.name} ${repo.description} ${repo.languages} ${repo.keywords}`;
-    const matchesSearch = combined.includes(query);
+    const combined = `${repo.name} ${repo.description} ${repo.languages} ${repo.keywords}`.toLowerCase();
+    const matchesSearch = queryWords.every(word => combined.includes(word));
     const matchesCategory = selectedCategory === "All" || repo.keywords.includes(selectedCategory.toLowerCase());
     return matchesSearch && matchesCategory;
   });
