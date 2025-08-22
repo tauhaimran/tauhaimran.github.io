@@ -92,6 +92,12 @@ header {
   vertical-align: top;
 }
 
+.projects-grid {
+  column-count: 3;
+  column-gap: 2.5rem;      /* Increase gap between columns */
+  padding: 0 1.5rem;       /* Add horizontal padding */
+}
+
 .project-card h4 {
   margin: 0 0 0.5rem;
 }
