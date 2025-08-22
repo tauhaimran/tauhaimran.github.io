@@ -1,4 +1,7 @@
 name,desc,link,languages,category
+Technical Portfolio Site,"Personal portfolio website to showcase projects and professional journey, deployed via GitHub Pages",https://github.com/tauhaimran/tauhaimran.github.io,"HTML, CSS, JavaScript","portfolio, web, frontend"
+Buildables-AI Fellowship,Project repo related to Buildables AI Fellowship (Jupyter Notebook experiments),https://github.com/tauhaimran/Buildables-AI-fellowship,Jupyter Notebook,"ai, fellowship, research"
+Pyxel Retro Game Development,Retro-style game development experiments using Pyxel in Python,https://github.com/tauhaimran/pyxel--retro-game-developement-,Python,"game, pyxel, retro, python"
 CS4067 EventBooking,Event booking system with .NET backend and SQL database,https://github.com/DevOps-I221339-I221239/CS4067-Assgt-EventBooking-i221239-i221339-tauhaimran-hamzaahmed,"C#, SQL","devops,sql,backend"
 AI algorithms compilation,Collection of common AI algorithms in Python with documentation,https://github.com/tauhaimran/AI-algorithms,Python,"ai,ml,algorithm,python,AI/ML,Game,Data Science"
 Parallel Social Behavior Based Algorithm for Identification of Influential Users in a Social Network,Parallel algorithm to identify influential users in social networks using Python and network analysis,https://github.com/tauhaimran/Parallel-social-behavior-based-algorithm-for-identification-of-influential-users-in-social-network,Python,"ai,ml,parallel,network,AI/ML"
