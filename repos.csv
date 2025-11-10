@@ -1,5 +1,5 @@
 name,desc,link,languages,category
-VRMTS ( VR Module ),VR Medical Training System,https://github.com/VRMTS/VRMTS-VR-Module,"C#, SQL","VR , game, meta quest , training system"
+VRMTS ( VR Module ),VR Medical Training System,https://github.com/VRMTS/VRMTS-VR-Module,"C#, SQL","VR/AR , game, meta quest , training system"
 Buildables-AI Fellowship,Project repo related to Buildables AI Fellowship (Jupyter Notebook experiments),https://github.com/tauhaimran/Buildables-AI-fellowship,"Python,Jupyter Notebook","ai, fellowship, research"
 NLPlayground,"A collection of hands-on NLP tasks exploring text processing, parsing, and language understanding.",https://github.com/tauhaimran/NLPlayground,"Python,Jupyter Notebook","ai , nlp , python , AI/ML "
 2D Platformer ,2D Platformer game in Unity,https://github.com/tauhaimran/2Dplatformer, C#,"game,unity,c#,gamedev"
